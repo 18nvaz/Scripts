@@ -1,3 +1,9 @@
+# USAGE: .\FileClassifier.ps1 -Path <path to root folder> -FileTypes <file extensions or type of files>
+# EXAMPLE 1: .\FileClassifier.ps1 -Path D:\foldername\ -FileTypes text, powershell, log, backups, csv, certificates, videos
+# EXAMPLE 2: .\FileClassifier.ps1 -Path D:\foldername\ -FileTypes pdf, docx, zip, rar
+
+
+
 [CmdletBinding()]
 Param(
   [Parameter(Mandatory=$True,Position=1)]
